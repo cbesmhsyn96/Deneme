@@ -1,5 +1,9 @@
 package paket;
 
 public class Parent {
-    public String ad = "Hüseyin";
+    protected String ad;
+    public Parent(String ad) {
+        this.ad = ad;
+        System.out.println("Şuan Parent sınıfı yapıcı metodu çağırıldı ==> "+ad);
+    }
 }
