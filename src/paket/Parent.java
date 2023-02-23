@@ -1,9 +1,26 @@
 package paket;
 
 public class Parent {
-    protected String ad;
-    public Parent(String ad) {
+    private String ad;
+    private String soyad;
+    public Parent(String ad, String soyad) {
         this.ad = ad;
-        System.out.println("Şuan Parent sınıfı yapıcı metodu çağırıldı ==> "+ad);
+        this.soyad = soyad;
+    }
+
+    public String getAd() {
+        return ad;
+    }
+
+    public String getSoyad(){
+        return soyad;
+    }
+
+    public String setAd(String ad){
+        return this.ad = ad;
+    }
+
+    public String setSoyad(String soyad){
+        return this.soyad = soyad;
     }
 }
