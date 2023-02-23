@@ -1,7 +1,10 @@
 package paket;
+
+import paket2.ParentPaket2;
+
 public class Main {
     public static void main(String[] args) {
-        Parent parent = new Parent("Hüseyin","Akcan");
-        System.out.println("Ad "+parent.getAd()+ "\nSoyad "+parent.getSoyad());
+        PaketParent parent = new PaketParent("Hüseyin","Akcan");
+        PaketChild child = new PaketChild("Abdullah","Akcan");
     }
 }

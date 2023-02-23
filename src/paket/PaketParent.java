@@ -1,13 +1,19 @@
 package paket;
 
-public class Parent {
+import com.sun.javaws.IconUtil;
+
+public class PaketParent {
     private String ad;
     private String soyad;
-    public Parent(String ad, String soyad) {
+    public PaketParent(String ad, String soyad) {
         this.ad = ad;
         this.soyad = soyad;
+        System.out.println("Parent yapıcısı çalıştı.");
+        System.out.println(gosterParentAdSoyad());
     }
-
+    private String gosterParentAdSoyad(){
+        return "Parent ad:"+getAd()+"\nParent soyad :"+getSoyad();
+    }
     public String getAd() {
         return ad;
     }
