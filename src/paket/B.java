@@ -21,4 +21,10 @@ public class B extends A{
         System.out.println("A sınıfı private tipindeki deger degiskenine erişim");
         System.out.println("A sınıfı deger ==> "+super.getDeger());
     }
+
+    public void gg(){
+        System.out.println(super.isim);
+        super.getDeger();
+        super.dd();
+    }
 }
